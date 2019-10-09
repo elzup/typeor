@@ -24,14 +24,3 @@ export const funcOr = (v: unknown, defaultValue: Function): Function =>
 
 export const arrayOr = (v: unknown, defaultValue: any[] = []): any[] =>
   Array.isArray(v) ? v : defaultValue
-
-export default {
-  strOr,
-  numOr,
-  numHardOr,
-  boolOr,
-  objOr,
-  objNullOr,
-  funcOr,
-  arrayOr,
-}
