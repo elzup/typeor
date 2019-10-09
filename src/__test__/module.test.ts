@@ -74,7 +74,7 @@ test("funcOr", () => {
 
 test("arrayOr", () => {
   expect(arrayOr([1], [2])).toStrictEqual([1])
-  expect(arrayOr([1, 2], [2])).toStrictEqual([1])
+  expect(arrayOr([1, 2], [2])).toStrictEqual([1, 2])
 
   expect(arrayOr(100, [2])).toStrictEqual([2])
   expect(arrayOr({}, [2])).toStrictEqual([2])
