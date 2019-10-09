@@ -1,3 +1,4 @@
 {
-  "extends": ["@elzup"]
+  "extends": ["@elzup"],
+  "major": { "automerge": true }
 }
