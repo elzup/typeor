@@ -1,0 +1,43 @@
+{
+  "name": "typeor",
+  "version": "0.0.0",
+  "author": "elzup",
+  "repository": "elzup/typeor",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "12.7.12",
+    "eslint": "6.5.1",
+    "eslint-config-nzap": "^1.1.0",
+    "husky": "3.0.8",
+    "jest": "24.9.0",
+    "lint-staged": "9.4.2",
+    "prettier": "1.18.2",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.4.1",
+    "typescript": "3.6.3"
+  },
+  "lint-staged": {
+    "scripts/**/*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "typescript",
+    "typeof",
+    "default"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "deploy": "yarn build && yarn publish",
+    "lint": "eslint --ext .ts src",
+    "test": "yarn lint && jest"
+  }
+}
