@@ -23,6 +23,7 @@ $ npm install typeor
 
 ```ts
 import { strOr } from 'typeor'
+
 strOr("aaa", "bbb")
 // "aaa"
 strOr("", "bbb")
@@ -44,7 +45,13 @@ strOr(10)
 
 `typeof v === "number" ? v : defaultValue`
 
+|check|ok|
+|-|-|
+|NaN|:o:|
+
 ```ts
+import { numOr } from 'typeor'
+
 numOr(0, 2)
 // 0
 numOr(100, 2)
@@ -67,6 +74,10 @@ numOr(NaN, 2)
 
 ### numHardOr(v: unknown, defaultValue = 0): number
 
+|check|ok|
+|-|-|
+|NaN|:x:|
+
 `typeof v === "number" && !isNaN(v) ? v : defaultValue`
 
 ```ts
@@ -87,6 +98,8 @@ numHardOr(NaN)
 `typeof v === "boolean" ? v : defaultValue`
 
 ```ts
+import { boolOr } from 'typeor'
+
 boolOr(true, false)
 // true
 
@@ -105,17 +118,26 @@ boolOr(10)
 
 ### objOr(v: unknown, defaultValue: object = {}): object
 
-`typeof v === "object" && v !== null ? v : defaultValue`
+`typeof v === "object" && !Array.isArray(v) && v !== null ? v : defaultValue`
+
+|check|ok|
+|-|-|
+|null|:x:|
+|[]|:x:|
 
 ```ts
+import { objOr } from 'typeor'
+
 objOr({ b: 2 }, { a: 1 })
 // { b: 2 }
 
 objOr(1, { a: 1 })
 // { a: 1 }
 objOr(null, { a: 1 })
-
 // { a: 1 }
+objOr([], { a: 1 })
+// { a: 1 }
+
 objOr({ a: 1 })
 // { a: 1 }
 objOr(false)
@@ -126,14 +148,23 @@ objOr(false)
 
 `typeof v === "object" ? v : defaultValue`
 
+|check|ok|
+|-|-|
+|null|:o:|
+|[]|:x:|
+
 ```ts
+import { objNullOr } from 'typeor'
+
 objNullOr({ b: 2 }, { a: 1 })
 // { b: 2 }
 objNullOr(1, { a: 1 })
 // { a: 1 }
-
 objNullOr(null, { a: 1 })
-// 
+// null
+
+objNullOr([], { a: 1 })
+// { a: 1 }
 
 objNullOr({ a: 1 })
 // { a: 1 }
@@ -146,6 +177,8 @@ objNullOr(false)
 `typeof v === "function" ? v : defaultValue`
 
 ```ts
+import { funcOr } from 'typeor'
+
 funcOr(() => 1, () => 2))
 // () => 1
 funcOr(true, () => 2))
@@ -157,6 +190,8 @@ funcOr(true, () => 2))
 `Array.isArray(v) ? v : defaultValue`
 
 ```ts
+import { arrayOr } from 'typeor'
+
 arrayOr([1], [2])
 // [1]
 arrayOr([1, 2], [2])

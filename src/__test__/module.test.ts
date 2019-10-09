@@ -1,6 +1,13 @@
-import m from "../"
-
-const { numOr, strOr, numHardOr, boolOr, objOr, objNullOr, funcOr, arrayOr } = m
+import {
+  strOr,
+  numOr,
+  numHardOr,
+  boolOr,
+  objOr,
+  objNullOr,
+  funcOr,
+  arrayOr,
+} from ".."
 
 test("strOr", () => {
   expect(strOr("aaa", "bbb")).toBe("aaa")
@@ -51,6 +58,7 @@ test("objOr", () => {
   expect(objOr({ b: 2 }, { a: 1 })).toStrictEqual({ b: 2 })
 
   expect(objOr(1, { a: 1 })).toStrictEqual({ a: 1 })
+  expect(objOr([], { a: 1 })).toStrictEqual({ a: 1 })
   expect(objOr(null, { a: 1 })).toStrictEqual({ a: 1 })
 
   expect(objOr({ a: 1 })).toStrictEqual({ a: 1 })
@@ -60,8 +68,9 @@ test("objOr", () => {
 test("objNullOr", () => {
   expect(objNullOr({ b: 2 }, { a: 1 })).toStrictEqual({ b: 2 })
   expect(objNullOr(1, { a: 1 })).toStrictEqual({ a: 1 })
-
   expect(objNullOr(null, { a: 1 })).toBeNull()
+
+  expect(objNullOr([], { a: 1 })).toStrictEqual({ a: 1 })
 
   expect(objNullOr({ a: 1 })).toStrictEqual({ a: 1 })
   expect(objNullOr(false)).toStrictEqual({})
