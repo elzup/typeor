@@ -11,7 +11,7 @@
     "eslint-config-nzap": "1.4.6",
     "husky": "4.2.3",
     "jest": "25.1.0",
-    "lint-staged": "9.5.0",
+    "lint-staged": "10.0.8",
     "prettier": "1.19.1",
     "ts-jest": "24.2.0",
     "ts-node": "8.6.2",
