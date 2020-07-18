@@ -548,10 +548,10 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@26.0.3":
-  version "26.0.3"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.3.tgz#79534e0e94857171c0edc596db0ebe7cb7863251"
-  integrity sha512-v89ga1clpVL/Y1+YI0eIu1VMW+KU7Xl8PhylVtDKVWaSUHBHYPLXMQGBdrpHewaKoTvlXkksbYqPgz8b4cmRZg==
+"@types/jest@26.0.4":
+  version "26.0.4"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.4.tgz#d2e513e85aca16992816f192582b5e67b0b15efb"
+  integrity sha512-4fQNItvelbNA9+sFgU+fhJo8ZFF+AS4Egk3GWwCW2jFtViukXbnztccafAdLhzE/0EiCogljtQQXP8aQ9J7sFg==
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
@@ -571,10 +571,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
   integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
 
-"@types/node@12.12.3":
-  version "12.12.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.3.tgz#ebfe83507ac506bc3486314a8aa395be66af8d23"
-  integrity sha512-opgSsy+cEF9N8MgaVPnWVtdJ3o4mV2aMHvDq7thkQUFt0EuOHJon4rQpJfhjmNHB+ikl0Cd6WhWIErOyQ+f7tw==
+"@types/node@14.0.23":
+  version "14.0.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.23.tgz#676fa0883450ed9da0bb24156213636290892806"
+  integrity sha512-Z4U8yDAl5TFkmYsZdFPdjeMa57NOvnaf1tljHzhouaPEp7LCj2JKkejpI1ODviIAQuW4CcQmxkQ77rnLsOOoKw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1532,10 +1532,10 @@ escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-nzap@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-nzap/-/eslint-config-nzap-2.1.0.tgz#e25529b2c3b08462119e3bc497293655e8f0680d"
-  integrity sha512-a3061q/u+QvpUnKaWnJRw2RUOazuKWDtZQaFWOII0jkucnIGRpxF6NZqUgVtA8OePadOwVxAJ4GlrE3jMczU0A==
+eslint-config-nzap@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-nzap/-/eslint-config-nzap-3.2.0.tgz#45ec4ed10405e8d8addcb174eb27ce18ee39e421"
+  integrity sha512-dekOYO5LmnjzNQ3WcsskJUgf3rAEGjmNli4yzQ4xNlct3TzlcaSBrMGza9qnoZx1HXBLKbUgbiC4IlMLzMvWDQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^3.0.2"
     "@typescript-eslint/parser" "^3.0.2"
@@ -1645,10 +1645,10 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.2
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz#30ebd1ef7c2fdff01c3a4f151044af25fab0523e"
   integrity sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
 
-eslint@7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
-  integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
+eslint@7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.4.0.tgz#4e35a2697e6c1972f9d6ef2b690ad319f80f206f"
+  integrity sha512-gU+lxhlPHu45H3JkEGgYhWhkR9wLHHEXC9FbWFnTlEkbKyZKWgWRLgf61E8zWmBuI6g5xKBph9ltg3NtZMVF8g==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -2835,7 +2835,7 @@ jest-snapshot@^26.1.0:
     pretty-format "^26.1.0"
     semver "^7.3.2"
 
-jest-util@^26.1.0:
+jest-util@26.x, jest-util@^26.1.0:
   version "26.1.0"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-26.1.0.tgz#80e85d4ba820decacf41a691c2042d5276e5d8d8"
   integrity sha512-rNMOwFQevljfNGvbzNQAxdmXQ+NawW/J72dmddsK0E8vgxXCMtwQ/EH0BiWEIxh0hhMcTsxwAxINt7Lh46Uzbg==
@@ -3189,14 +3189,6 @@ merge-stream@^2.0.0:
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
   integrity sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
 
-micromatch@4.x, micromatch@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
-  integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
-  dependencies:
-    braces "^3.0.1"
-    picomatch "^2.0.5"
-
 micromatch@^3.1.4:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"
@@ -3215,6 +3207,14 @@ micromatch@^3.1.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
+
+micromatch@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
+  integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
+  dependencies:
+    braces "^3.0.1"
+    picomatch "^2.0.5"
 
 mime-db@1.44.0:
   version "1.44.0"
@@ -4500,18 +4500,18 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-ts-jest@26.1.1:
-  version "26.1.1"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.1.1.tgz#b98569b8a4d4025d966b3d40c81986dd1c510f8d"
-  integrity sha512-Lk/357quLg5jJFyBQLnSbhycnB3FPe+e9i7ahxokyXxAYoB0q1pPmqxxRPYr4smJic1Rjcf7MXDBhZWgxlli0A==
+ts-jest@26.1.3:
+  version "26.1.3"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.1.3.tgz#aac928a05fdf13e3e6dfbc8caec3847442667894"
+  integrity sha512-beUTSvuqR9SmKQEylewqJdnXWMVGJRFqSz2M8wKJe7GBMmLZ5zw6XXKSJckbHNMxn+zdB3guN2eOucSw2gBMnw==
   dependencies:
     bs-logger "0.x"
     buffer-from "1.x"
     fast-json-stable-stringify "2.x"
+    jest-util "26.x"
     json5 "2.x"
     lodash.memoize "4.x"
     make-error "1.x"
-    micromatch "4.x"
     mkdirp "1.x"
     semver "7.x"
     yargs-parser "18.x"
@@ -4602,10 +4602,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@3.9.5:
-  version "3.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
-  integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
+typescript@3.9.7:
+  version "3.9.7"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
+  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
 union-value@^1.0.0:
   version "1.0.1"
