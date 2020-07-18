@@ -22,5 +22,5 @@ export const objNullOr = (
 export const funcOr = (v: unknown, defaultValue: Function): Function =>
   typeof v === "function" ? v : defaultValue
 
-export const arrayOr = (v: unknown, defaultValue: any[] = []): any[] =>
+export const arrayOr = (v: unknown, defaultValue: unknown[] = []): unknown[] =>
   Array.isArray(v) ? v : defaultValue
