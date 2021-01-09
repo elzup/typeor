@@ -77,7 +77,12 @@ test("objNullOr", () => {
 })
 
 test("funcOr", () => {
-  expect(funcOr(() => 1, () => 2)()).toBe(1)
+  expect(
+    funcOr(
+      () => 1,
+      () => 2
+    )()
+  ).toBe(1)
   expect(funcOr(true, () => 2)()).toBe(2)
 })
 
