@@ -5,8 +5,8 @@
   "repository": "elzup/typeor",
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "26.0.23",
-    "@types/node": "14.17.4",
+    "@types/jest": "26.0.24",
+    "@types/node": "14.17.6",
     "eslint": "7.29.0",
     "eslint-config-nzap": "4.3.1",
     "husky": "6.0.0",
