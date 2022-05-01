@@ -1,15 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "es6",
-    "esModuleInterop": true,
-    "strict": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "noImplicitAny": false,
-    "jsx": "preserve"
-  },
+  "extends": "@elzup/tsconfig",
   "include": ["src/**/*"]
 }
