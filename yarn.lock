@@ -824,10 +824,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@29.5.2":
-  version "29.5.2"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.2.tgz#86b4afc86e3a8f3005b297ed8a72494f89e6395b"
-  integrity sha512-mSoZVJF5YzGVCk+FsDxzDuH7s+SCkzrgKZzf0Z0T2WudhBUPoF6ktoTPC4R0ZoCPCV5xUvuU6ias5NvxcBcMMg==
+"@types/jest@29.5.11":
+  version "29.5.11"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.11.tgz#0c13aa0da7d0929f078ab080ae5d4ced80fa2f2c"
+  integrity sha512-S2mHmYIVe13vrm6q4kN6fLYYAka15ALQki/vgDC3mIukEOx8WJlv0kQPM+d4w8Gp6u0uSdKND04IlTXBv0rwnQ==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -849,10 +849,12 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@18.16.19":
-  version "18.16.19"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.19.tgz#cb03fca8910fdeb7595b755126a8a78144714eea"
-  integrity sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==
+"@types/node@18.19.4":
+  version "18.19.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.4.tgz#89672e84f11a2c19543d694dac00ab8d7bc20ddb"
+  integrity sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/semver@^7.3.12":
   version "7.5.6"
