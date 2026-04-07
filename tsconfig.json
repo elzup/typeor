@@ -1,4 +1,18 @@
 {
   "extends": "@elzup/tsconfig",
-  "include": ["src/**/*"]
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2020",
+    "noUncheckedIndexedAccess": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "declaration": false,
+    "types": ["vitest/globals"],
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/__test__/**/*", "vitest.config.ts", "lib"]
 }

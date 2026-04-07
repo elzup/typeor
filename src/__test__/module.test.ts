@@ -7,7 +7,7 @@ import {
   objNullOr,
   funcOr,
   arrayOr,
-} from ".."
+} from "../index.js"
 
 test("strOr", () => {
   expect(strOr("aaa", "bbb")).toBe("aaa")
