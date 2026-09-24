@@ -27,7 +27,7 @@
   ],
   "packageManager": "pnpm@10.26.2",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "scripts": {
     "clean": "rimraf lib",
